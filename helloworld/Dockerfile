@@ -5,5 +5,6 @@ WORKDIR /
 RUN pip install runpod
 
 ADD handler.py .
+ADD http://date.jsontest.com /etc/build-date
 
 CMD [ "python", "-u", "/handler.py" ]
